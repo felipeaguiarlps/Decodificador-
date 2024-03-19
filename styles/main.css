@@ -1,0 +1,113 @@
+:root{
+    --cor-primaria: #F3F5Fc ;
+    --font-text: "Inter", sans-serif;
+    --cor-texto: #0A3871;
+    --cor-secundaria: #FFFFFF;
+    --cor-botaoDescript: #D8DFE8;
+}
+
+
+body{
+    background: var(--cor-primaria);
+}
+
+.logo_alura{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 4%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+
+.text{
+    margin: 100px 0px 0px 150px;
+}
+
+.input_text{
+    background-color: var(--cor-primaria);
+    font-family: var(--font-text);
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--cor-texto);
+    font-weight: 400;
+    margin-top: 90px;
+    text-transform: lowercase;
+    border: none;
+}
+
+::placeholder{
+    color: var(--cor-texto);
+}
+
+.mensagem{
+    font-family: var(--font-text);
+    width: 370px;
+    height: 700px;
+    background-color: var(--cor-secundaria);
+    background-image: url("/assets/img/Imagem\ Search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    border-radius: 32px;
+    color: var(--cor-texto);
+    margin-left: 400px;
+    margin-top: 50px;
+    padding-left: 52px;
+    position: fixed;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.btn{
+    display: flex;
+    gap: 20px;
+}
+
+.informacao{
+    margin-top: 320px;
+}
+
+.btn_criptografar{
+    width: 328px;
+    height: 67px;
+    background-color: var(--cor-texto);
+    color: var(--cor-botaoDescript);
+    font-family: var(--font-text);
+    border-radius: 24px;
+    border: none;
+}
+
+.btn_descriptografar{
+    width: 328px;
+    height: 67px;
+    background-color: var(--cor-botaoDescript);
+    color: var(--cor-texto);
+    font-family: var(--font-text);
+    border-radius: 24px;
+    border-color: none;
+    border-style: hidden;
+}
+
+.btn_copiar{
+    width: 150px;
+    height: 67px;
+    background-color: var(--cor-texto);
+    color: var(--cor-botaoDescript);
+    font-family: var(--font-text);
+    border-radius: 24px;
+    border: none;
+}
+
+.mensagem.criptografado {
+    background-image: none;
+}
